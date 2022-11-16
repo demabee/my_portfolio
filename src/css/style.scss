@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap);
+
+$fontStyle: 'Inter', serif;
+$fontColor: #fff;
+$fontTextColor: #7e7979;
+$bgColor: #2a2a2a;
+$firstProject: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/sportscut.PNG');
+$secondProject: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/buko.PNG');
+$thirdProject: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ems.PNG');
+
+body {
+  background-color: $bgColor;
+  font-family: $fontStyle;
+  color: $fontColor!important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+    li {
+      padding: 0px 40px;
+    }
+    a {
+      text-decoration: none;
+      font-size: 40px;
+      font-family: $fontStyle;
+      font-weight: bold;
+      color: $fontColor;
+    }
+}
+
+.aboutme-img-container {
+  .aboutMeImg {
+    position: relative;
+    height: 600px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  h1{
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+}
+
+.aboutme-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: $fontTextColor!important;
+}
+
+h1.text-left {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    height: 300px;
+    padding: 40px;
+  }
+}
+
+.first-project {
+  margin: 30px 0 100px 0;
+  background: $firstProject;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  h1 {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+}
+
+.second-project {
+  background: $secondProject;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  h1 {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+  }
+}
+
+.third-project {
+  margin: 100px 0;
+  background: $thirdProject;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  h1 {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+}
+
+.footer-container {
+  background-color: #202020;
+  padding: 20px;
+  h1 {
+    font-size: 50px;
+    font-weight: bolder;
+  }
+}
+
+.logo-container {
+  font-size: 50px;
+  a {
+    text-decoration-style: none;
+    color: $fontColor;
+    padding: 20px;
+    &:hover{
+      color: blue;
+    }
+    &:hover:nth-child(2){
+      color: #fa7035;
+    }
+    &:hover:nth-child(3){
+      color: #0077b5;
+    }
+  }
+}
+
+.skills-text {
+  font-size: 50px;
+  font-weight: bolder;
+  color: $fontTextColor;
+  text-align: left;
+}
+
+.work-heading {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: left;
+  color: $fontTextColor;
+}
